@@ -1,0 +1,57 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Module Coverage",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/test",
+      "program": "${workspaceFolder}/test/node_modules/nyc/bin/nyc.js",
+      "args": [
+        "${workspaceFolder}/test/node_modules/mocha/bin/_mocha",
+        "-u",
+        "bdd",
+        "--timeout",
+        "999999",
+        "--colors",
+        "${workspaceFolder}/test/dist/test/code/Main.test.js"
+      ],
+      "request": "launch",
+      "showAsyncStacks": true,
+      "type": "node",
+      "windows": {},
+      "skipFiles": [
+        "<node_internals>/**",
+        "${workspaceFolder}/test/node_modules/**"
+      ],
+      "outputCapture": "std",
+      "preLaunchTask": "tsc"
+    },
+    {
+      "name": "Module Test",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/test",
+      "program": "${workspaceFolder}/test/node_modules/mocha/bin/_mocha",
+      "args": [
+        "-u",
+        "bdd",
+        "--timeout",
+        "999999",
+        "--colors",
+        "${workspaceFolder}/test/dist/test/code/Main.test.js"
+      ],
+      "request": "launch",
+      "showAsyncStacks": true,
+      "type": "node",
+      "windows": {},
+      "skipFiles": [
+        "<node_internals>/**",
+        "${workspaceFolder}/test/node_modules/**"
+      ],
+      "outputCapture": "std",
+      "preLaunchTask": "tsc"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import { DateTime } from 'luxon';
+import { DateTime } from '@jkassis/luxon';
 // Frequency specifies the smallest interval that can repeat
 export var TimeUnit;
 (function (TimeUnit) {

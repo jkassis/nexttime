@@ -6,7 +6,7 @@ import chai from 'chai'
 
 const { expect } = chai
 
-import { DateTime } from 'luxon'
+import { DateTime } from '@jkassis/luxon'
 import { Recurrence, TimeUnit, DateTimePartK, RuleConfDayOfWeek, RuleConfWeekOfMonth, DateTimePartVDayOfWeek } from '../../module/code/Main.js'
 
 it('test recurrence for sundays', () => {

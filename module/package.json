@@ -20,12 +20,12 @@
     "recurrence"
   ],
   "scripts": {
-    "prepare": "tsc"
+    "build": "tsc"
   },
   "dependencies": {
-    "@jkassis/luxon": "^1.25.1",
     "@types/luxon": "^1.25.0",
-    "@types/node": "^14.11.2"
+    "@types/node": "^14.11.2",
+    "luxon": "^2.0.2"
   },
   "devDependencies": {
     "ts-node": "^9.0.0",

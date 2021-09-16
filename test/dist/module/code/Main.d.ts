@@ -1,4 +1,4 @@
-import { DateTime } from '@jkassis/luxon';
+import { DateTime } from 'luxon';
 export declare enum TimeUnit {
     Millisecond = 100,
     Second = 90,

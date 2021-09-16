@@ -25,14 +25,14 @@
     "test": "bin/test.bash"
   },
   "dependencies": {
-    "@types/luxon": "^1.25.0",
+    "@types/luxon": "^2.0.4",
     "@types/node": "^14.11.2",
     "@types/source-map-support": "^0.5.3",
     "chai": "^4.2.0",
-    "luxon": "^1.25.0",
+    "luxon": "^2.0.2",
     "mocha": "^8.2.1",
     "nyc": "^15.1.0",
-    "source-map-support": "^0.5.19"
+    "source-map-support": "^0.5.20"
   },
   "devDependencies": {
     "ts-node": "^9.0.0",

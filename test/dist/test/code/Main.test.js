@@ -4,7 +4,7 @@ import mocha from 'mocha';
 const { before, describe, it, after, beforeEach } = mocha;
 import chai from 'chai';
 const { expect } = chai;
-import { DateTime } from '@jkassis/luxon';
+import { DateTime } from 'luxon';
 import { Recurrence, TimeUnit, DateTimePartK, DateTimePartVDayOfWeek } from '../../module/code/Main.js';
 it('test recurrence for sundays', () => {
     var bidenDay = DateTime.fromISO("2020-11-07T23:27:00.213Z");

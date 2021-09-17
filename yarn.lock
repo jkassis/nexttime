@@ -218,9 +218,9 @@
   integrity sha512-ZXRY4jNvVgSVQ8DL3LTcakaAtXwTVUxE81hslsyD2AtoXW/wVob10HkOJ1X/pAlcI7D+2YoZKg5do8G/w6RYgA==
 
 "@jkassis/luxon@^2.0.4":
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/@jkassis/luxon/-/luxon-2.0.6.tgz#a87e9461e0d885c0613ba552dcedc7e8675fbe6d"
-  integrity sha512-NNfQuv7M+j5Uqvmo9syOMd8X4AObSiqtB49bacBrTQJ/yX6+X9lEx6ITSVVSUylP1kR/5vAMN7H40pHMBVKWvQ==
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/@jkassis/luxon/-/luxon-2.0.8.tgz#ca7d75f34663595a74dfced88d233108398ace88"
+  integrity sha512-o04oV387jf0HMSE2y8EdnYCdt2mykWUa0ekw2OWkd97ZdEVIHFcbv7O9zXiKJ6uznXjgIq9sqqzixpiZ3EJHRQ==
 
 "@types/source-map-support@^0.5.3":
   version "0.5.4"

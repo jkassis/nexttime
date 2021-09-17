@@ -20,11 +20,11 @@
     "recurrence"
   ],
   "scripts": {
-    "build": "yarn run tsc; yarn run dist",
-    "dist": "esbuild build/src/Module.js --bundle --format=esm --sourcemap --outfile=dist/Module.js",
-    "tsc": "tsc",
-    "watch": "watch 'yarn run build' ./src",
-    "test": "tsc ; ./node_modules/mocha/bin/_mocha -u bdd --timeout 999999 --colors ./build/test/Module.test.js"
+    "clean": "rm -Rf build/* dist/*",
+    "dist": "esbuild build/mod/Module.js --bundle --format=esm --sourcemap --outfile=dist/Module.js",
+    "build": "tsc",
+    "watch": "watch 'yarn run build ; yarn run dist' ./mod",
+    "test": "yarn run build ; ./node_modules/mocha/bin/_mocha -u bdd --timeout 999999 --colors ./build/test/Module.test.js"
   },
   "dependencies": {
     "@jkassis/luxon": "^2.0.4"
@@ -40,5 +40,8 @@
   },
   "exports": [
     "./dist/module.js"
+  ],
+  "files": [
+    "dist"
   ]
 }

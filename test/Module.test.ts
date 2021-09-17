@@ -7,7 +7,7 @@ import chai from 'chai'
 const { expect } = chai
 
 import { DateTime } from '@jkassis/luxon'
-import { Recurrence, TimeUnit, DateTimePartK, RuleConfDayOfWeek, RuleConfWeekOfMonth, DateTimePartVDayOfWeek } from '../src/Module.js'
+import { Recurrence, TimeUnit, DateTimePartK, RuleConfDayOfWeek, RuleConfWeekOfMonth, DateTimePartVDayOfWeek } from '../mod/Module.js'
 
 it('test recurrence for sundays', () => {
     var bidenDay = DateTime.fromISO("2020-11-07T23:27:00.213Z")

@@ -14,6 +14,6 @@
     // "allowJs": true,
     // "watch": true,
   },
-  "include": ["src/**/*", "test/**/*"],
+  "include": ["mod/**/*", "test/**/*"],
   "exclude": ["node_modules", "**/*.spec.ts"]
 }

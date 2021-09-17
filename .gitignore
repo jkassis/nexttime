@@ -3,4 +3,6 @@
 **/yarn-error.log
 tags
 .nys_output
+dist/*
+build/*
 

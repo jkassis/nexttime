@@ -20,15 +20,16 @@
     "recurrence"
   ],
   "scripts": {
-    "build": "tsc",
-    "test": "tsc ; ./node_modules/mocha/bin/_mocha -u bdd --timeout 999999 --colors ./dist/test/Main.test.js"
+    "build": "yarn run tsc; yarn run dist",
+    "dist": "esbuild build/src/Module.js --bundle --format=esm --sourcemap --outfile=dist/Module.js",
+    "tsc": "tsc",
+    "watch": "watch 'yarn run build' ./src",
+    "test": "tsc ; ./node_modules/mocha/bin/_mocha -u bdd --timeout 999999 --colors ./build/test/Module.test.js"
   },
   "dependencies": {
-    "@jkassis/luxon": "^2.0.2",
-    "@types/node": "^14.11.2"
+    "@jkassis/luxon": "^2.0.4"
   },
   "devDependencies": {
-    "@types/node": "^14.11.2",
     "@types/source-map-support": "^0.5.3",
     "chai": "^4.2.0",
     "mocha": "^8.2.1",
@@ -38,6 +39,6 @@
     "typescript": "^4.0.5"
   },
   "exports": [
-    "./dist/code/Main.js"
+    "./dist/module.js"
   ]
 }

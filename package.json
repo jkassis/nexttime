@@ -1,10 +1,9 @@
 {
-  "name": "@jkassis/nexttimetests",
-  "private": true,
-  "version": "1.0.11",
+  "name": "@jkassis/nexttime",
+  "version": "1.0.19",
   "description": "ESM for DateTime Recurrences",
-  "main": "dist/test/code/Main.test.js",
-  "types": "dist/test/code/Main.test.d.ts",
+  "main": "dist/Main.js",
+  "types": "dist/Main.d.ts",
   "author": "Jeremy Kassis <jkassis@gmail.com>",
   "homepage": "https://github.com/jkassis/nexttime#Readme.md",
   "repository": "https://github.com/jkassis/nexttime",
@@ -21,21 +20,25 @@
     "recurrence"
   ],
   "scripts": {
-    "prepare": "tsc",
-    "test": "bin/test.bash"
+    "build": "tsc",
+    "test": "tsc ; ./node_modules/mocha/bin/_mocha -u bdd --timeout 999999 --colors ./dist/test/Main.test.js"
   },
   "dependencies": {
-    "@types/luxon": "^2.0.4",
+    "@jkassis/luxon": "^2.0.2",
+    "@types/luxon": "^1.25.0",
+    "@types/node": "^14.11.2"
+  },
+  "devDependencies": {
     "@types/node": "^14.11.2",
     "@types/source-map-support": "^0.5.3",
     "chai": "^4.2.0",
-    "luxon": "^2.0.2",
     "mocha": "^8.2.1",
     "nyc": "^15.1.0",
-    "source-map-support": "^0.5.20"
-  },
-  "devDependencies": {
+    "source-map-support": "^0.5.20",
     "ts-node": "^9.0.0",
     "typescript": "^4.0.5"
-  }
+  },
+  "exports": [
+    "./dist/code/Main.js"
+  ]
 }

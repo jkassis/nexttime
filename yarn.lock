@@ -222,11 +222,6 @@
   resolved "https://registry.yarnpkg.com/@jkassis/luxon/-/luxon-2.0.4.tgz#c995a4f781f4e330142c20ab53f644fc61cd4f62"
   integrity sha512-f9rHOTnZ1Yc6nJn+tFk5QPurO6XO2bCuYf8ck551bJgFwdOJsufeGsYMGe6tCLEwVQZvsgCLoEN/yi3SdzPF0A==
 
-"@types/luxon@^1.25.0":
-  version "1.27.1"
-  resolved "https://registry.yarnpkg.com/@types/luxon/-/luxon-1.27.1.tgz#aceeb2d5be8fccf541237e184e37ecff5faa9096"
-  integrity sha512-cPiXpOvPFDr2edMnOXlz3UBDApwUfR+cpizvxCy0n3vp9bz/qe8BWzHPIEFcy+ogUOyjKuCISgyq77ELZPmkkg==
-
 "@types/node@^14.11.2":
   version "14.11.2"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.11.2.tgz#2de1ed6670439387da1c9f549a2ade2b0a799256"

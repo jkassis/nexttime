@@ -1,6 +1,6 @@
 {
   "name": "@jkassis/nexttime",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "description": "ESM for DateTime Recurrences",
   "main": "dist/Main.js",
   "types": "dist/Main.d.ts",

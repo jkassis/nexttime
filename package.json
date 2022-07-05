@@ -20,11 +20,12 @@
     "recurrence"
   ],
   "scripts": {
+    "build": "tsc",
     "clean": "rm -Rf build/* dist/*",
     "dist": "cp build/mod/Main.d.ts dist/Main.d.ts ; esbuild build/mod/Main.js --bundle --format=esm --sourcemap --outfile=dist/Main.js",
-    "build": "tsc",
-    "watch": "watch 'yarn run build ; yarn run dist' ./mod",
-    "test": "yarn run build ; ./node_modules/mocha/bin/_mocha -u bdd --timeout 999999 --colors ./build/test/Main.test.js"
+    "prepare": "yarn clean && yarn build && yarn dist",
+    "test": "yarn run build ; ./node_modules/mocha/bin/_mocha -u bdd --timeout 999999 --colors ./build/test/Main.test.js",
+    "watch": "watch 'yarn build ; yarn dist' ./mod"
   },
   "dependencies": {
     "@jkassis/luxon": "^2.0.4"

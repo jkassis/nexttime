@@ -7,9 +7,5 @@ See test/code/Main.test.ts for everything you need to know.
 
 
 
-
-By,
-
-
 ![Image of Author](https://raw.githubusercontent.com/jkassis/nexttime/master/mod/Author.png)
 

@@ -1,4 +1,4 @@
-![Image of Module](https://raw.githubusercontent.com/jkassis/itransact-node-ts/master/src/Module.png)
+
 
 A module for generating a sequence of dates that match a recurrence pattern.
 
